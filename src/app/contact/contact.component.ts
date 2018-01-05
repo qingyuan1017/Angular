@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
-  createForm(){
+  createForm() {
     this.feedbackForm = this.fb.group({
       firstname: ['', Validators.required ],
       lastname: ['', Validators.required ],
@@ -41,6 +41,7 @@ export class ContactComponent implements OnInit {
       agree: false,
       contacttype: 'None',
       message: ''
+    });
   }
 
 }
