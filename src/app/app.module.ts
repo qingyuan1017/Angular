@@ -28,6 +28,8 @@ import { LeaderService} from './services/leader.service';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LoginComponent } from './login/login.component';
 
+
+import {baseURL} from './share/baseURL';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +53,7 @@ import { LoginComponent } from './login/login.component';
     MatCardModule, MatIconModule, MatProgressSpinnerModule, MatDialogModule,FlexLayoutModule,
     AppRoutingModule, ReactiveFormsModule
   ],
-  providers: [DishService, PromotionService, LeaderService],
+  providers: [DishService, PromotionService, LeaderService, {provide: 'BaseURL', useValue: baseURL}],
   entryComponents:[LoginComponent],
   bootstrap: [AppComponent]
 })
