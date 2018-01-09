@@ -29,7 +29,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LoginComponent } from './login/login.component';
 
 
-import {baseURL} from './share/baseURL';
+import {baseURL} from './share/baseurl';
+import { ProcessHttpmsgService} from './services/process-httpmsg.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +54,9 @@ import {baseURL} from './share/baseURL';
     MatCardModule, MatIconModule, MatProgressSpinnerModule, MatDialogModule,FlexLayoutModule,
     AppRoutingModule, ReactiveFormsModule
   ],
-  providers: [DishService, PromotionService, LeaderService, {provide: 'BaseURL', useValue: baseURL}],
+  providers: [DishService, PromotionService, LeaderService, {provide: 'BaseURL', useValue: baseURL},
+  ProcessHttpmsgService],
+
   entryComponents:[LoginComponent],
   bootstrap: [AppComponent]
 })
