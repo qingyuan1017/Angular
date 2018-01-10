@@ -3,9 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\services",
-    "\\src\\app\\share"
+    "\\src\\app\\dishdetail",
+    "\\src\\app\\home",
+    "\\src\\app\\services"
   ],
-  "SelectedNode": "\\src\\app\\services\\dish.service.ts",
+  "SelectedNode": "\\src\\app\\services\\process-httpmsg.service.ts",
   "PreviewInSolutionExplorer": false
 }
